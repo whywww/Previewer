@@ -28,7 +28,7 @@ function main(){
     // Create a texture 
     loader = new THREE.TextureLoader();
         loader.load(imagePathPrefix + curr.toString() + '.png', function ( texture ) {
-            var geometry = new THREE.PlaneBufferGeometry(1, 1.5);
+            var geometry = new THREE.PlaneBufferGeometry(1.5, 1.5);
 
             var material = new THREE.MeshBasicMaterial( { map: texture } );
 
@@ -55,7 +55,7 @@ function onResize() {
 
 function update(image){
     loader.load(image, function ( texture ) {
-        var geometry = new THREE.PlaneBufferGeometry(1, 1.5);
+        var geometry = new THREE.PlaneBufferGeometry(1.5, 1.5);
 
         var material = new THREE.MeshBasicMaterial( { map: texture } );
 
