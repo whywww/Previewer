@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Previewer</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+            .lbl { color:#fff; font-size:16px; font-weight:bold; position: absolute; bottom:0px; z-index:100; text-shadow:#000 1px 1px 1px; background-color:rgba(0,0,0,0.85); padding:1em }
+			#lbl_left { text-align:left; left:0px }
+			#lbl_right { text-align:left; right:0px }
+
+			.g { color:#aaa }
+			.c { color:#fa0 }
+		</style>
+    </head>
+    
+    <body>
+		<canvas id="c" width="750" height="750"></canvas>
+        <script src="previewer.js" type="module"></script>
+        <div id="lbl_left" class="lbl">
+            Image Number <br/>
+            <span class="g" id="id">0.png</span>
+        </div>
+    </body>
+</html>
